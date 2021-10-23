@@ -9,7 +9,7 @@ import java.sql.*;
 
 public class BaseDAO implements DAO {
 
-    private static final Logger log = Logger.getLogger(BaseDAO.class);
+
     protected DataSource dataSource;
 
     @Override
@@ -32,21 +32,21 @@ public class BaseDAO implements DAO {
             try {
                 resultSet.close();
             } catch (Exception e) {
-                log.error("Error close ResultSet", e);
+
             }
         }
         if (statement != null) {
             try {
                 statement.close();
             } catch (Exception e) {
-                log.error("Error close Statement", e);
+
             }
         }
         if (connection != null) {
             try {
                 connection.close();
             } catch (Exception e) {
-                log.error("Error close Connection", e);
+
             }
         }
     }

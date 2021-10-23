@@ -17,7 +17,7 @@ import java.util.List;
 @WebServlet(name = "DepartmentServletCU",
         urlPatterns = {"/department_create", "/department_update"})
 public class DepartmentServletCU extends BaseDepartmentServlet {
-    private static final Logger log = Logger.getLogger(DepartmentServletCU.class);
+
     private final DepartmentAction departmentAction = new DepartmentAction();
 
      protected void process(HttpServletRequest request, HttpServletResponse response) {

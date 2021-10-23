@@ -9,7 +9,7 @@ import javax.sql.DataSource;
 
 
 public class DataSourceCache {
-    private static final Logger log = Logger.getLogger(DataSourceCache.class);
+
     private static DataSourceCache instance;
     private DataSource dataSource;
     static {

@@ -14,7 +14,7 @@ import java.util.List;
 
 
 public abstract class BaseDepartmentServlet extends HttpServlet {
-    private static final Logger log = Logger.getLogger(BaseDepartmentServlet.class);
+
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response)  {
             process(request, response);

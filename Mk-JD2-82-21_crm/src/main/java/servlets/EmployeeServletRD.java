@@ -20,7 +20,7 @@ import java.util.List;
 @WebServlet(name = "EmployeeServletRD",
         urlPatterns = {"/employee_read", "/employee_delete", "/employee_input_update", "/employee_input"})
 public class EmployeeServletRD extends BaseEmployeeServlet {
-    private static final Logger log = Logger.getLogger(EmployeeServletRD.class);
+
 
     protected void process(HttpServletRequest request, HttpServletResponse response){
         DepartmentAction departmentAction = new DepartmentAction();

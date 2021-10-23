@@ -11,11 +11,11 @@ import java.io.IOException;
 @WebFilter(filterName = "DispatcherFilter", urlPatterns = { "/*" })
 public class CharacterSetFilter implements Filter {
 
-    private static final Logger log = Logger.getLogger(CharacterSetFilter.class);
+
 
     @Override
     public void init(FilterConfig filterConfig){
-        log.info("Init CharacterSetFilter");
+
     }
 
     @Override
@@ -29,6 +29,6 @@ public class CharacterSetFilter implements Filter {
 
     @Override
     public void destroy() {
-        log.info("Destroy CharacterSetFilter");
+
     }
 }

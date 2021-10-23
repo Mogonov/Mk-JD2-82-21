@@ -17,7 +17,7 @@ import java.util.List;
 @WebServlet(name = "DepartmentServletRD",
         urlPatterns = {"/department_read", "/", "/department_delete", "/department_input", "/department_input_update"})
 public class DepartmentServletRD extends BaseDepartmentServlet {
-    private static final Logger log = Logger.getLogger(DepartmentServletRD.class);
+
 
 
 

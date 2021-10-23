@@ -18,7 +18,7 @@ import java.util.List;
 @WebServlet(name = "EmployeeServletCU",
         urlPatterns = {"/employee_create", "/employee_update"})
 public class EmployeeServletCU extends BaseEmployeeServlet {
-    private static final Logger log = Logger.getLogger(EmployeeServletCU.class);
+
     private final EmployeeAction employeeAction = new EmployeeAction();
 
     protected void process(HttpServletRequest request, HttpServletResponse response){
