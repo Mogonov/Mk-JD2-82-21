@@ -1,7 +1,7 @@
 package validator;
 
+import com.mchange.v2.lang.StringUtils;
 import form.EmployeeForm;
-import org.apache.commons.lang3.StringUtils;
 
 import java.sql.Date;
 import java.util.ArrayList;
@@ -28,7 +28,7 @@ public class EmployeeValidator {
         String number = employeeForm.getNumber();
         if (number == null || number.trim().isEmpty()) {
             errors.add("Employee must have a number");
-        } else if (!StringUtils.isNumeric(number)){
+        } else if (!StringUtils.nonEmptyString(number)){
             errors.add("Invalid number value");
         }
         String email = employeeForm.getEmail();
